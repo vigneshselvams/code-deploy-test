@@ -2,16 +2,8 @@ version: 0.0
 os: linux
 
 files:
- - source: ./moodle
-   destination: /var/www/html
+ - source: /
+   destination: /var/www/html/moodle
+   
 
-hooks:
-   BeforeInstall:
-     - location: testscripts/web-server-stop.sh
-       timeout: 300
-       runas: root
-    
-   AfterInstall:
-    - location: testscripts/web-server-start.sh
-      timeout: 300
-      runas: root
+
