@@ -12,10 +12,10 @@ permissions:
     mode: 755
 
 hooks:
- - beforeinstall:
+ - Beforeinstall:
      location: testscripts/web-server-stop.sh
      sleep: 300
     
- - afterinstall:
+ - Afterinstall:
      location: testscripts/web-server-start.sh
    
