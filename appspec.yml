@@ -4,7 +4,7 @@ os: linux
 files:
  - source: /
    destination: /var/www/html/moodle
-   overwrite: true
+   overwrite: yes
    
 permissions:
   - object: /var/www/html/moodle
