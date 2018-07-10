@@ -4,7 +4,9 @@ os: linux
 files:
  - source: /
    destination: /var/www/html/moodle
-   overwrite: yes
+   overwrite: none (default)
+   overwrite: purge
+   overwrite: merge
    
 permissions:
   - object: /var/www/html/moodle
