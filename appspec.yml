@@ -8,8 +8,10 @@ files:
 hooks:
  - Beforeinstall:
      location: testscripts/web-server-stop.sh
-     : 300
+     timeout: 300
+     runas: root
     
  - Afterinstall:
      location: testscripts/web-server-start.sh
-   
+     timeout: 300
+     runas: root
