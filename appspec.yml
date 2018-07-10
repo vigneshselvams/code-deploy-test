@@ -6,12 +6,12 @@ files:
    destination: /var/www/html
 
 hooks:
- - Beforeinstall:
-     location: testscripts/web-server-stop.sh
-     timeout: 300
-     runas: root
+   BeforeInstall:
+     - location: testscripts/web-server-stop.sh
+       timeout: 300
+       runas: root
     
- - Afterinstall:
-     location: testscripts/web-server-start.sh
-     timeout: 300
-     runas: root
+   AfterInstall:
+    - location: testscripts/web-server-start.sh
+      timeout: 300
+      runas: root
