@@ -3,7 +3,7 @@ os: linux
 
 files:
  - source: /theme/boost/scss/moodle.scss
-   destination: /var/www/html/moodle/theme/boost/scss/moodle.scss
+   destination: /var/www/html/moodle/theme/boost/scss
    overwrite: purge
    
 permissions:
